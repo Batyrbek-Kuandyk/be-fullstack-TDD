@@ -1,9 +1,11 @@
+from turtledemo.penrose import f
 from unittest import TestCase
 
 
 class FindMaxTest(TestCase):
     def test_get_max(self):
-        pass
+        result = f.get_max(1, 34)
+        self.assertEqual(result, 1)
 
     def test_get_max_without_arguments(self):
         pass

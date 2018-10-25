@@ -1,5 +1,8 @@
 def get_max(a, b):
-    pass
+    """
+            Return max number among a and b.
+    """
+    return a if a > b else b;
 
 
 def get_max_without_arguments():

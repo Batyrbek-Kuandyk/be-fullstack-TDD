@@ -1,57 +1,9 @@
-# be-fullstack-TDD
+# ABCclasses
 
-Test Driven Development (TDD) - is a software development process that relies on the 
-repetition of a very short development cycle: requirements are turned into very 
-specific test cases, then the software is improved to pass the new tests, only.
+Python is a very flexible language. One of the aspects of this flexibility is the possibilities provided by metaprogramming. And although in the core of the language abstract classes are not represented, they were implemented in the standard module abs.
 
-#### PART-1. FIND_MIN 
+Abstract classes are a unique way of documenting code and help limit (decouple) the interaction of individual abstractions in a program (classes). As well as abstract classes do not provide for the creation of objects, moreover, they implement one of the principles of OOP polymorphism. Regarding polymorphism, you can read here 'https://habr.com/post/37576/'.
 
-1. Look at the file **find_min.py**. 
+Abstract classes also have methods like regular classes, but the difference from ordinary classes is that we cannot create objects in abstract classes. Abstract methods - contain only method definitions without implementation. It is assumed that the descendant class should predefine the method and implement its functionality.
 
-2. To follow TDD the first thing we have to do is write tests for given functions.
-Fortunately for you I've already created tests. (look at the file **tests/find_min_test.py**)
-
-3. Run tests:
-   
-        python3 -m unittest tests/find_min_test.py
-        
-    You will see that it ran 7 tests and all of them FAILED (failures=7)
-
-4. Now, complete that functions in **find_min.py**
-
-5. After running tests all of them should be passed.
-
-6. Compare your answer with mine located in **answers/find_min.py**
-
-7. Commit and push your changes
-
-___
-
-#### PART-2. FIND_MAX
-
-1. Look at the file **find_max.py**. You will find that there are empty functions.
-
-2. Run tests for find_max functions:
-        
-        python3 -m unittest tests/find_max_test.py
-   
-   You will see that it Ran 7 tests without failures, because there is no body for
-   test functions in **test/find_max_test.py**   
-
-3. You have to do:
-    
-    1. Write documentation for function **get_max** inside **find_max.py**
-    
-    2. Write test for **get_max** function inside **tests/find_max.py**
-    
-    3. Run tests and see that one test failed (test_get_max)
-    
-    4. Implement **get_max** function
-    
-    5. Run tests, all of the tests shoud be passed.
-    
-    6. Do the same for every function one by one
-
-4. Commit and push your changes
-
-5. Smile cause you've done good job.
+__metaclass__ is class in the OOP, objects of which in turn are classes.
